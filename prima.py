@@ -19,8 +19,8 @@ from PIL import Image
 tab1,tab2,tab3,tab4 = st.tabs(["Intro","Modello Settoriale", "Metodologia AMC", "Backtest"])
 
 with tab1:
-    altri_asset = pd.read_excel("altri_assets.xlsx", index_col = 0)
-    dati = pd.read_excel("settori.xlsx", index_col = 0)
+    altri_asset = pd.read_excel("/app/amc/altri_assets.xlsx", index_col = 0)
+    dati = pd.read_excel("/app/amc/settori.xlsx", index_col = 0)
     dati_per_dopo = dati
 
 
