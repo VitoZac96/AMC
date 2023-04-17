@@ -1,1 +1,6 @@
-fredapi
+streamlit
+pandas
+matplotlib
+numpy
+datetime
+PIL
