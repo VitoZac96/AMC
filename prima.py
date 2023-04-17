@@ -24,8 +24,8 @@ with tab1:
     #dati = st.file_uploader("settori.xlsx")
 
 
-    altri_asset = pd.read_excel("main/altri_assets.xlsx", index_col = 0)
-    dati = pd.read_excel("main/settori.xlsx", index_col = 0)
+    altri_asset = pd.read_excel("altri_assets.xlsx", index_col = 0, engine="openpyxl")
+    dati = pd.read_excel("settori.xlsx", index_col = 0, engine="openpyxl")
 
     dati_per_dopo = dati
 
