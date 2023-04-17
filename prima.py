@@ -3,7 +3,7 @@ import streamlit as st
 
 import pandas as pd
 import numpy as np
-import yfinance as yf
+#import yfinance as yf
 
 import datetime
 
@@ -25,7 +25,7 @@ with tab1:
 
 
     st.title("Mercati azionari agitati oppure calmi?")
-    st.subheader('Una AMC per affrontare ogni situazione.')
+    st.subheader('Un AMC per affrontare ogni situazione.')
 
     st.divider()
     st.subheader('La strategia')
@@ -275,7 +275,7 @@ with tab3:
 
     st.caption("11 Basket equal weighted da riempire selezionando tra 14 ETFs.")
     st.caption("I settori che passano il filtro trend-following sono inclusi nel portafoglio.")
-    st.caption("I settori che non passano il filtro trend-following sono esclusi ed i relativi basket sono riempiti con risk off assets (money market, Treasury e cash)")
+    st.caption("I settori che non passano il filtro trend-following sono esclusi ed i relativi basket sono riempiti con risk off assets (money market, Treasury e gold.)")
 
     allocation = Image.open('allocation.JPEG')
 
