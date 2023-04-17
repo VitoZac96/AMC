@@ -19,8 +19,14 @@ from PIL import Image
 tab1,tab2,tab3,tab4 = st.tabs(["Intro","Modello Settoriale", "Metodologia AMC", "Backtest"])
 
 with tab1:
-    altri_asset = pd.read_excel("vitozac96/amc/main/altri_assets.xlsx", index_col = 0)
-    dati = pd.read_excel("vitozac96/amc/main/settori.xlsx", index_col = 0)
+
+    altri_asset = st.file_uploader("altri_assets.xlsx")
+    dati = st.file_uploader("settori.xlsx")
+
+
+    #altri_asset = pd.read_excel("vitozac96/amc/main/altri_assets.xlsx", index_col = 0)
+    #dati = pd.read_excel("vitozac96/amc/main/settori.xlsx", index_col = 0)
+    
     dati_per_dopo = dati
 
 
